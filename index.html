@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRCAR – Drive Beyond Limits</title>
+  <meta name="description" content="CRCAR – Premium luxury cars redefined. Explore our curated fleet of high-performance vehicles crafted for those who demand excellence." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Owl Carousel 2 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">CR<span>CAR</span></a>
+    <ul class="nav-links">
+      <li><a href="#fleet">Fleet</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#testimonials">Stories</a></li>
+      <li><a href="#cta-section">Contact</a></li>
+    </ul>
+    <a href="#cta-section" class="nav-cta">Book a Drive</a>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero">
+    <!-- Hero Video Background -->
+    <div class="hero-video-wrap">
+      <video
+        id="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        poster=""
+      >
+        <source src="assets/Luxury_car_animation_1080p_20260924125040.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- Cinematic overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <div class="hero-eyebrow-line"></div>
+        <span class="hero-eyebrow-text">Premium Automotive</span>
+      </div>
+
+      <h1 class="hero-title">
+        Drive Beyond<br>
+        <em>Limits.</em>
+      </h1>
+
+      <p class="hero-sub">
+        Curated fleet of the world's most extraordinary vehicles. Every car, every detail, engineered to perfection.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#fleet" class="btn-primary">Explore Fleet</a>
+        <a href="#experience" class="btn-ghost">
+          Our Story
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero Stats -->
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num">247<span>+</span></div>
+        <div class="hero-stat-label">Premium Vehicles</div>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">12<span>k</span></div>
+        <div class="hero-stat-label">Satisfied Clients</div>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">4.9<span>*</span></div>
+        <div class="hero-stat-label">Average Rating</div>
+      </div>
+    </div>
+
+    <!-- Video Cinema Control Deck -->
+    <div class="hero-video-bar">
+      <div class="video-ctrl-group">
+        <button id="video-toggle-btn" class="video-pill-btn" aria-label="Play or Pause Film" title="Play / Pause">
+          <svg id="icon-pause" width="13" height="13" fill="currentColor" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+          <svg id="icon-play" width="13" height="13" fill="currentColor" viewBox="0 0 24 24" style="display:none;"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+          <span id="video-toggle-text">Pause Film</span>
+        </button>
+
+        <button id="video-sound-btn" class="video-pill-btn" aria-label="Audio Mute or Unmute" title="Audio Toggle">
+          <svg id="icon-muted" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+            <line x1="23" y1="9" x2="17" y2="15"/>
+            <line x1="17" y1="9" x2="23" y2="15"/>
+          </svg>
+          <svg id="icon-unmuted" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="display:none;">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+          </svg>
+          <span id="video-sound-text">Sound: Off</span>
+        </button>
+
+        <button id="video-cinema-btn" class="video-pill-btn" aria-label="Fullscreen Cinema Mode" title="Fullscreen View">
+          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+          </svg>
+          <span>Cinema Mode</span>
+        </button>
+      </div>
+
+      <div class="video-timeline-wrap" id="video-timeline" title="Click to seek">
+        <div class="video-time-display"><span id="video-current-time">0:00</span> / <span id="video-total-time">0:00</span></div>
+        <div class="video-progress-track">
+          <div id="video-progress-fill" class="video-progress-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee-section">
+    <div class="marquee-track" id="marquee">
+      <!-- Duplicated for seamless loop -->
+      <div class="marquee-item"><span class="marquee-text">Lamborghini</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span class="marquee-text">Ferrari</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span class="marquee-text">Rolls-Royce</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span class="marquee-text">Bentley</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span class="marquee-text">McLaren</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span class="marquee-text">Porsche</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span class="marquee-text">Aston Martin</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span class="marquee-text">Bugatti</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span class="marquee-text">Maserati</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span class="marquee-text">Pagani</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span class="marquee-text">Lamborghini</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span class="marquee-text">Ferrari</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span class="marquee-text">Rolls-Royce</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span class="marquee-text">Bentley</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span class="marquee-text">McLaren</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span class="marquee-text">Porsche</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span class="marquee-text">Aston Martin</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span class="marquee-text">Bugatti</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span class="marquee-text">Maserati</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span class="marquee-text">Pagani</span><div class="marquee-dot"></div></div>
+    </div>
+  </div>
+
+  <!-- ===== FLEET SECTION ===== -->
+  <section id="fleet">
+    <div class="section-header">
+      <div>
+        <div class="section-label reveal">Our Collection</div>
+        <h2 class="section-title reveal reveal-delay-1">Handpicked<br>Excellence</h2>
+      </div>
+      <a href="#fleet" class="section-link reveal">
+        View all vehicles
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="owl-carousel owl-theme fleet-carousel">
+      <!-- Car 1: Ferrari SF90 -->
+      <div class="car-card">
+        <div class="car-img-wrap">
+          <img src="assets/ferrari_sf90.jpg" alt="Ferrari SF90 Stradale" class="car-img" loading="lazy" />
+          <div class="car-img-glare"></div>
+          <div class="car-img-overlay"></div>
+        </div>
+        <div class="car-info">
+          <div>
+            <span class="car-badge">
+              <span class="badge-pulse-dot"></span>
+              Available Now
+            </span>
+            <div class="car-name">Ferrari SF90 Stradale</div>
+            <div class="car-spec">V8 Hybrid, 986 hp — 0-100 in 2.5s</div>
+          </div>
+          <div class="car-footer">
+            <div class="car-price"><sup>$</sup>12,800 <small style="font-size:0.55em;color:var(--muted);font-weight:400;">/day</small></div>
+            <div class="car-arrow">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path d="M7 17L17 7M7 7h10v10"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Car 2: Lamborghini Huracán -->
+      <div class="car-card">
+        <div class="car-img-wrap">
+          <img src="assets/lamborghini_huracan.jpg" alt="Lamborghini Huracán EVO" class="car-img" loading="lazy" />
+          <div class="car-img-glare"></div>
+          <div class="car-img-overlay"></div>
+        </div>
+        <div class="car-info">
+          <div>
+            <span class="car-badge">
+              <span class="badge-pulse-dot"></span>
+              Available
+            </span>
+            <div class="car-name">Lamborghini Huracán EVO</div>
+            <div class="car-spec">V10 NA, 640 hp — 0-100 in 2.9s</div>
+          </div>
+          <div class="car-footer">
+            <div class="car-price"><sup>$</sup>8,400 <small style="font-size:0.55em;color:var(--muted);font-weight:400;">/day</small></div>
+            <div class="car-arrow">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path d="M7 17L17 7M7 7h10v10"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Car 3: Rolls-Royce Ghost -->
+      <div class="car-card">
+        <div class="car-img-wrap">
+          <img src="assets/rolls_royce_ghost.jpg" alt="Rolls-Royce Ghost" class="car-img" loading="lazy" />
+          <div class="car-img-glare"></div>
+          <div class="car-img-overlay"></div>
+        </div>
+        <div class="car-info">
+          <div>
+            <span class="car-badge reserved">
+              <span class="badge-pulse-dot reserved-dot"></span>
+              Reserved
+            </span>
+            <div class="car-name">Rolls-Royce Ghost</div>
+            <div class="car-spec">V12 Biturbo, 563 hp — Bespoke Interior</div>
+          </div>
+          <div class="car-footer">
+            <div class="car-price"><sup>$</sup>6,200 <small style="font-size:0.55em;color:var(--muted);font-weight:400;">/day</small></div>
+            <div class="car-arrow">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path d="M7 17L17 7M7 7h10v10"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Car 4: Porsche 911 GT3 RS -->
+      <div class="car-card">
+        <div class="car-img-wrap">
+          <img src="assets/porsche_gt3rs.jpg" alt="Porsche 911 GT3 RS" class="car-img" loading="lazy" />
+          <div class="car-img-glare"></div>
+          <div class="car-img-overlay"></div>
+        </div>
+        <div class="car-info">
+          <div>
+            <span class="car-badge">
+              <span class="badge-pulse-dot"></span>
+              Available Now
+            </span>
+            <div class="car-name">Porsche 911 GT3 RS</div>
+            <div class="car-spec">4.0L Boxer-6, 518 hp — Track Weapon</div>
+          </div>
+          <div class="car-footer">
+            <div class="car-price"><sup>$</sup>9,500 <small style="font-size:0.55em;color:var(--muted);font-weight:400;">/day</small></div>
+            <div class="car-arrow">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path d="M7 17L17 7M7 7h10v10"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Car 5: Bentley Continental GT -->
+      <div class="car-card">
+        <div class="car-img-wrap">
+          <img src="assets/bentley_gt.jpg" alt="Bentley Continental GT Speed" class="car-img" loading="lazy" />
+          <div class="car-img-glare"></div>
+          <div class="car-img-overlay"></div>
+        </div>
+        <div class="car-info">
+          <div>
+            <span class="car-badge">
+              <span class="badge-pulse-dot"></span>
+              Available
+            </span>
+            <div class="car-name">Bentley Continental GT</div>
+            <div class="car-spec">6.0L W12, 650 hp — Grand Tourer</div>
+          </div>
+          <div class="car-footer">
+            <div class="car-price"><sup>$</sup>7,800 <small style="font-size:0.55em;color:var(--muted);font-weight:400;">/day</small></div>
+            <div class="car-arrow">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path d="M7 17L17 7M7 7h10v10"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section id="experience">
+    <div class="exp-grid">
+      <div class="exp-visual reveal">
+        <div class="exp-accent-bar"></div>
+        <img src="assets/car_interior.jpg" alt="Luxury car cockpit experience" class="exp-img-main" loading="lazy" />
+        <img src="assets/car_wheel.jpg" alt="Precision wheel detail" class="exp-img-float" loading="lazy" />
+      </div>
+
+      <div class="exp-content">
+        <div class="section-label reveal">Why CRCAR</div>
+        <h2 class="exp-title reveal reveal-delay-1">Every Drive is<br><em>Unforgettable</em></h2>
+        <p class="exp-body reveal reveal-delay-2">
+          We don't just rent cars. We curate experiences. From the moment you make contact to the second you return the keys, every detail is handled with obsessive precision.
+        </p>
+
+        <div class="exp-features">
+          <div class="exp-feature reveal reveal-delay-1">
+            <div class="exp-feature-icon">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div class="exp-feature-text">
+              <h4>White Glove Service</h4>
+              <p>Concierge delivery to your location, 24/7.</p>
+            </div>
+          </div>
+          <div class="exp-feature reveal reveal-delay-2">
+            <div class="exp-feature-icon">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <div class="exp-feature-text">
+              <h4>Flexible Duration</h4>
+              <p>Hours to months. Your timeline, your terms.</p>
+            </div>
+          </div>
+          <div class="exp-feature reveal reveal-delay-3">
+            <div class="exp-feature-icon">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+              </svg>
+            </div>
+            <div class="exp-feature-text">
+              <h4>Peak Performance</h4>
+              <p>Every vehicle serviced before each booking.</p>
+            </div>
+          </div>
+          <div class="exp-feature reveal reveal-delay-4">
+            <div class="exp-feature-icon">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <div class="exp-feature-text">
+              <h4>Private Clientele</h4>
+              <p>Membership-only access for discretion.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#cta-section" class="btn-primary reveal" style="display:inline-block;">Schedule a Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section id="stats">
+    <div class="stats-grid">
+      <div class="stat-item" data-target="247" data-suffix="+" data-decimals="0">
+        <div class="stat-num"><span class="counter-value">0</span><span class="stat-suffix">+</span></div>
+        <div class="stat-label">Premium Vehicles</div>
+      </div>
+      <div class="stat-item" data-target="12" data-suffix="k" data-decimals="0">
+        <div class="stat-num"><span class="counter-value">0</span><span class="stat-suffix">k</span></div>
+        <div class="stat-label">Satisfied Clients</div>
+      </div>
+      <div class="stat-item" data-target="38" data-suffix="" data-decimals="0">
+        <div class="stat-num"><span class="counter-value">0</span><span class="stat-suffix"></span></div>
+        <div class="stat-label">Global Cities</div>
+      </div>
+      <div class="stat-item" data-target="4.9" data-suffix="*" data-decimals="1">
+        <div class="stat-num"><span class="counter-value">0.0</span><span class="stat-suffix">*</span></div>
+        <div class="stat-label">Average Rating</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section id="testimonials">
+    <div class="section-header">
+      <div>
+        <div class="section-label reveal">Client Stories</div>
+        <h2 class="section-title reveal reveal-delay-1">Voices of<br>Excellence</h2>
+      </div>
+    </div>
+
+    <div class="testimonial-grid">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-quote">The Ferrari they delivered was pristine. Concierge met me at the hotel lobby at 6am without a single hiccup. CRCAR is in a league of its own.</p>
+        <div class="testimonial-author">
+          <img src="https://picsum.photos/seed/professional-man-marcus/60/60" alt="Marcus Vellain" class="author-avatar" loading="lazy" />
+          <div>
+            <div class="author-name">Marcus Vellain</div>
+            <div class="author-role">CEO, Vellain Capital</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="testimonial-stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-quote">Rented the Rolls-Royce Ghost for a client event in Dubai. The entire team was exceptional - vehicle detail, punctuality, discretion. Truly 5-star.</p>
+        <div class="testimonial-author">
+          <img src="https://picsum.photos/seed/woman-professional-sophie/60/60" alt="Sophia Renaud" class="author-avatar" loading="lazy" />
+          <div>
+            <div class="author-name">Sophia Renaud</div>
+            <div class="author-role">Partner, Renaud Advisory</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="testimonial-stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-quote">The Lambo Huracan was immaculate. Membership perks are incredible - priority booking means I've never had to wait for my preferred vehicle. Worth every penny.</p>
+        <div class="testimonial-author">
+          <img src="https://picsum.photos/seed/businessman-alex-luxury/60/60" alt="Alessandro Ferroni" class="author-avatar" loading="lazy" />
+          <div>
+            <div class="author-name">Alessandro Ferroni</div>
+            <div class="author-role">Founder, Meridian Group</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA SECTION ===== -->
+  <section id="cta-section">
+    <div class="cta-bg"></div>
+    <div class="cta-glow"></div>
+    <div class="cta-content">
+      <div class="cta-label reveal">Private Access</div>
+      <h2 class="cta-title reveal reveal-delay-1">Your Next Drive<br>Awaits</h2>
+      <p class="cta-sub reveal reveal-delay-2">Join our exclusive membership and access the world's finest vehicles with priority booking and bespoke concierge service.</p>
+      <div class="cta-actions reveal reveal-delay-3">
+        <a href="mailto:hello@crcar.com" class="btn-primary">Apply for Membership</a>
+        <a href="tel:+18885550199" class="btn-ghost">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l.96-.93a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2z"/>
+          </svg>
+          Call Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo" style="font-size:1.4rem;">CR<span>CAR</span></a>
+        <p>Premium automotive experiences for those who demand nothing less than extraordinary. Where every journey becomes a memory.</p>
+      </div>
+
+      <div>
+        <div class="footer-title">Fleet</div>
+        <ul class="footer-links">
+          <li><a href="#">Hypercars</a></li>
+          <li><a href="#">GT & Sports</a></li>
+          <li><a href="#">Luxury Sedans</a></li>
+          <li><a href="#">SUV Premium</a></li>
+          <li><a href="#">Convertibles</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-title">Company</div>
+        <ul class="footer-links">
+          <li><a href="#">About CRCAR</a></li>
+          <li><a href="#">Membership</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-title">Contact</div>
+        <ul class="footer-links">
+          <li><a href="mailto:hello@crcar.com">hello@crcar.com</a></li>
+          <li><a href="tel:+18885550199">+1 888 555 0199</a></li>
+          <li><a href="#">WhatsApp</a></li>
+          <li><a href="#">Concierge Chat</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2026 CRCAR. All rights reserved. Premium Automotive Experiences.</div>
+      <div class="footer-socials">
+        <a href="#" class="social-link" aria-label="Instagram">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Twitter / X">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-link" aria-label="YouTube">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+            <polygon fill="currentColor" stroke="none" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- jQuery & Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+    // ===== INITIALIZE OWL CAROUSEL =====
+    $(document).ready(function(){
+      $('.fleet-carousel').owlCarousel({
+        loop: true,
+        margin: 24,
+        nav: true,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 4500,
+        autoplayHoverPause: true,
+        smartSpeed: 700,
+        navText: [
+          '<svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg>',
+          '<svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>'
+        ],
+        responsive: {
+          0: {
+            items: 1,
+            margin: 16
+          },
+          700: {
+            items: 2,
+            margin: 20
+          },
+          1100: {
+            items: 3,
+            margin: 24
+          }
+        }
+      });
+    });
+    // ===== NAVBAR SCROLL =====
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 80) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    }, { passive: true });
+
+    // ===== HERO VIDEO INTERACTIVE CINEMA CONTROLLER =====
+    const video = document.getElementById('hero-video');
+    const videoToggleBtn = document.getElementById('video-toggle-btn');
+    const iconPause = document.getElementById('icon-pause');
+    const iconPlay = document.getElementById('icon-play');
+    const toggleText = document.getElementById('video-toggle-text');
+
+    const soundBtn = document.getElementById('video-sound-btn');
+    const iconMuted = document.getElementById('icon-muted');
+    const iconUnmuted = document.getElementById('icon-unmuted');
+    const soundText = document.getElementById('video-sound-text');
+
+    const cinemaBtn = document.getElementById('video-cinema-btn');
+    const timeline = document.getElementById('video-timeline');
+    const progressFill = document.getElementById('video-progress-fill');
+    const currentTimeEl = document.getElementById('video-current-time');
+    const totalTimeEl = document.getElementById('video-total-time');
+
+    if (video) {
+      const formatTime = (secs) => {
+        if (isNaN(secs) || secs < 0) return '0:00';
+        const m = Math.floor(secs / 60);
+        const s = Math.floor(secs % 60);
+        return `${m}:${s < 10 ? '0' : ''}${s}`;
+      };
+
+      video.play().catch(() => {
+        if (iconPlay && iconPause) {
+          iconPlay.style.display = 'inline-block';
+          iconPause.style.display = 'none';
+          if (toggleText) toggleText.textContent = 'Play Film';
+        }
+      });
+
+      video.addEventListener('loadedmetadata', () => {
+        if (totalTimeEl) totalTimeEl.textContent = formatTime(video.duration);
+      });
+      if (video.duration) {
+        if (totalTimeEl) totalTimeEl.textContent = formatTime(video.duration);
+      }
+
+      video.addEventListener('timeupdate', () => {
+        if (video.duration) {
+          const pct = (video.currentTime / video.duration) * 100;
+          if (progressFill) progressFill.style.width = pct + '%';
+          if (currentTimeEl) currentTimeEl.textContent = formatTime(video.currentTime);
+          if (totalTimeEl && (!totalTimeEl.textContent || totalTimeEl.textContent === '0:00')) {
+            totalTimeEl.textContent = formatTime(video.duration);
+          }
+        }
+      });
+
+      if (videoToggleBtn) {
+        videoToggleBtn.addEventListener('click', () => {
+          if (video.paused) {
+            video.play();
+            if (iconPlay) iconPlay.style.display = 'none';
+            if (iconPause) iconPause.style.display = 'inline-block';
+            if (toggleText) toggleText.textContent = 'Pause Film';
+          } else {
+            video.pause();
+            if (iconPlay) iconPlay.style.display = 'inline-block';
+            if (iconPause) iconPause.style.display = 'none';
+            if (toggleText) toggleText.textContent = 'Play Film';
+          }
+        });
+      }
+
+      if (soundBtn) {
+        soundBtn.addEventListener('click', () => {
+          if (video.muted) {
+            video.muted = false;
+            video.volume = 1;
+            if (iconMuted) iconMuted.style.display = 'none';
+            if (iconUnmuted) iconUnmuted.style.display = 'inline-block';
+            if (soundText) soundText.textContent = 'Sound: On';
+            soundBtn.style.borderColor = 'var(--gold)';
+            soundBtn.style.background = 'rgba(201,168,76,0.18)';
+          } else {
+            video.muted = true;
+            if (iconMuted) iconMuted.style.display = 'inline-block';
+            if (iconUnmuted) iconUnmuted.style.display = 'none';
+            if (soundText) soundText.textContent = 'Sound: Off';
+            soundBtn.style.borderColor = '';
+            soundBtn.style.background = '';
+          }
+        });
+      }
+
+      if (timeline) {
+        timeline.addEventListener('click', (e) => {
+          const track = timeline.querySelector('.video-progress-track');
+          if (track && video.duration) {
+            const rect = track.getBoundingClientRect();
+            const clickX = e.clientX - rect.left;
+            const width = rect.width;
+            const newPct = Math.max(0, Math.min(1, clickX / width));
+            video.currentTime = newPct * video.duration;
+          }
+        });
+      }
+
+      if (cinemaBtn) {
+        cinemaBtn.addEventListener('click', () => {
+          const heroWrap = document.querySelector('.hero-video-wrap');
+          const targetEl = heroWrap || video;
+          if (!document.fullscreenElement) {
+            if (targetEl.requestFullscreen) {
+              targetEl.requestFullscreen();
+            } else if (targetEl.webkitRequestFullscreen) {
+              targetEl.webkitRequestFullscreen();
+            } else if (targetEl.msRequestFullscreen) {
+              targetEl.msRequestFullscreen();
+            }
+          } else {
+            if (document.exitFullscreen) {
+              document.exitFullscreen();
+            }
+          }
+        });
+      }
+
+      if ('IntersectionObserver' in window) {
+        const heroSection = document.getElementById('hero');
+        if (heroSection) {
+          const videoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                if (videoToggleBtn && toggleText && toggleText.textContent === 'Pause Film') {
+                  video.play().catch(() => {});
+                }
+              } else {
+                video.pause();
+              }
+            });
+          }, { threshold: 0.1 });
+          videoObserver.observe(heroSection);
+        }
+      }
+    }
+
+    // ===== SMOOTH SCROLL (nav links) =====
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // ===== STATS COUNT-UP ANIMATION =====
+    const statsSection = document.getElementById('stats');
+    if (statsSection) {
+      let animated = false;
+      const statItems = statsSection.querySelectorAll('.stat-item');
+
+      const runCounterAnimation = () => {
+        const duration = 2200; // 2.2 seconds for luxurious feel
+        const startTime = performance.now();
+
+        const tick = (now) => {
+          const elapsed = now - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          // Ease-out quartic curve: very smooth deceleration
+          const ease = 1 - Math.pow(1 - progress, 4);
+
+          statItems.forEach(item => {
+            const target = parseFloat(item.dataset.target);
+            const decimals = parseInt(item.dataset.decimals || 0, 10);
+            const valEl = item.querySelector('.counter-value');
+            if (valEl) {
+              const current = target * ease;
+              valEl.textContent = current.toFixed(decimals);
+            }
+          });
+
+          if (progress < 1) {
+            requestAnimationFrame(tick);
+          } else {
+            // Lock in final exact values
+            statItems.forEach(item => {
+              const target = parseFloat(item.dataset.target);
+              const decimals = parseInt(item.dataset.decimals || 0, 10);
+              const valEl = item.querySelector('.counter-value');
+              if (valEl) {
+                valEl.textContent = target.toFixed(decimals);
+              }
+            });
+          }
+        };
+
+        requestAnimationFrame(tick);
+      };
+
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting && !animated) {
+              animated = true;
+              runCounterAnimation();
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.25 });
+        observer.observe(statsSection);
+      } else {
+        runCounterAnimation();
+      }
+    }
+
+    // ===== 3D INTERACTIVE TILT ANIMATION FOR CAR CARDS =====
+    if (window.matchMedia('(hover: hover)').matches) {
+      document.querySelectorAll('.car-card').forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+          const rotateX = ((y - centerY) / centerY) * -6;
+          const rotateY = ((x - centerX) / centerX) * 6;
+
+          card.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-8px)`;
+        });
+
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = '';
+        });
+      });
+    }
+  </script>
+</body>
+</html>
